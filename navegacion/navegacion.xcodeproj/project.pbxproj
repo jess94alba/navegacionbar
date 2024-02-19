@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		480109432B7FAD89005F4093 /* viewConuntController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480109422B7FAD89005F4093 /* viewConuntController.swift */; };
-		485D61512B81A2C900F69140 /* tabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485D61502B81A2C900F69140 /* tabBar.xib */; };
-		4898E79C2B7FE55A002B696B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4898E79B2B7FE55A002B696B /* TabBarController.swift */; };
+		4889C79A2B82A9A700D3FC6D /* contadorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4889C7992B82A9A700D3FC6D /* contadorViewController.swift */; };
+		4889C7A62B82B69900D3FC6D /* tabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4889C7A52B82B69900D3FC6D /* tabBarViewController.swift */; };
 		4898E79F2B7FEA4C002B696B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4898E79E2B7FEA4C002B696B /* GoogleService-Info.plist */; };
 		4898E7A42B7FEE16002B696B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4898E7A32B7FEE16002B696B /* FirebaseAnalytics */; };
 		4898E7A62B7FEE16002B696B /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 4898E7A52B7FEE16002B696B /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -48,9 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		480109422B7FAD89005F4093 /* viewConuntController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewConuntController.swift; sourceTree = "<group>"; };
-		485D61502B81A2C900F69140 /* tabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tabBar.xib; sourceTree = "<group>"; };
-		4898E79B2B7FE55A002B696B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		4889C7992B82A9A700D3FC6D /* contadorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contadorViewController.swift; sourceTree = "<group>"; };
+		4889C7A52B82B69900D3FC6D /* tabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBarViewController.swift; sourceTree = "<group>"; };
 		4898E79E2B7FEA4C002B696B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4898E7AF2B7FF2D7002B696B /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		4898E7B22B80044E002B696B /* viewEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewEmailViewController.swift; sourceTree = "<group>"; };
@@ -100,21 +98,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		480109412B7FACEC005F4093 /* viewCount */ = {
+		4889C7982B82A97000D3FC6D /* contador */ = {
 			isa = PBXGroup;
 			children = (
-				480109422B7FAD89005F4093 /* viewConuntController.swift */,
+				4889C7992B82A9A700D3FC6D /* contadorViewController.swift */,
 			);
-			path = viewCount;
+			path = contador;
 			sourceTree = "<group>";
 		};
-		4898E7922B7FE215002B696B /* barcontroler */ = {
+		4889C7A22B82B5D500D3FC6D /* tabBar */ = {
 			isa = PBXGroup;
 			children = (
-				4898E79B2B7FE55A002B696B /* TabBarController.swift */,
-				485D61502B81A2C900F69140 /* tabBar.xib */,
+				4889C7A52B82B69900D3FC6D /* tabBarViewController.swift */,
 			);
-			path = barcontroler;
+			path = tabBar;
 			sourceTree = "<group>";
 		};
 		4898E79D2B7FEA03002B696B /* firebase */ = {
@@ -136,9 +133,10 @@
 		48B2322D2B7F204500C0A749 = {
 			isa = PBXGroup;
 			children = (
+				4889C7A22B82B5D500D3FC6D /* tabBar */,
+				4889C7982B82A97000D3FC6D /* contador */,
 				4898E7B12B80041A002B696B /* viewEmail */,
 				4898E79D2B7FEA03002B696B /* firebase */,
-				4898E7922B7FE215002B696B /* barcontroler */,
 				48B232382B7F204500C0A749 /* navegacion */,
 				48B2324F2B7F204800C0A749 /* navegacionTests */,
 				48B232592B7F204800C0A749 /* navegacionUITests */,
@@ -159,7 +157,6 @@
 		48B232382B7F204500C0A749 /* navegacion */ = {
 			isa = PBXGroup;
 			children = (
-				480109412B7FACEC005F4093 /* viewCount */,
 				48B232392B7F204500C0A749 /* AppDelegate.swift */,
 				48B2323B2B7F204500C0A749 /* SceneDelegate.swift */,
 				48B2323D2B7F204500C0A749 /* ViewController.swift */,
@@ -304,7 +301,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				485D61512B81A2C900F69140 /* tabBar.xib in Resources */,
 				48B232462B7F204800C0A749 /* LaunchScreen.storyboard in Resources */,
 				4898E79F2B7FEA4C002B696B /* GoogleService-Info.plist in Resources */,
 				48B232432B7F204800C0A749 /* Assets.xcassets in Resources */,
@@ -334,11 +330,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B2323E2B7F204500C0A749 /* ViewController.swift in Sources */,
+				4889C79A2B82A9A700D3FC6D /* contadorViewController.swift in Sources */,
 				4898E7B32B80044E002B696B /* viewEmailViewController.swift in Sources */,
-				4898E79C2B7FE55A002B696B /* TabBarController.swift in Sources */,
 				48B2323A2B7F204500C0A749 /* AppDelegate.swift in Sources */,
+				4889C7A62B82B69900D3FC6D /* tabBarViewController.swift in Sources */,
 				48B2323C2B7F204500C0A749 /* SceneDelegate.swift in Sources */,
-				480109432B7FAD89005F4093 /* viewConuntController.swift in Sources */,
 				4898E7B02B7FF2D7002B696B /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

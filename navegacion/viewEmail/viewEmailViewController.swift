@@ -14,27 +14,27 @@ enum ProviderType: String
 class viewEmailViewController: UIViewController
 {
     
-    @IBOutlet weak var emailLable: UITextField!
-    @IBOutlet weak var ProvedorLable: UITextField!
-    @IBOutlet weak var closeSecionLable: UIButton!
+    @IBOutlet weak var emailTextFile: UITextField!
+    @IBOutlet weak var ProvedorTextFile: UITextField!
+    @IBOutlet weak var closeSecionButton: UIButton!
     
-    var email: String
-    var provider: ProviderType
-    
-    init(email: String, provider: ProviderType)
-    {
-        self.email = email
-        self.provider = provider
-        super.init(nibName: nil, bundle: nil)
-    }
-    
-    required init?(coder: NSCoder)
-    {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
+     private let email: String
+     private let provider: ProviderType
+     
+     init(email: String, provider: ProviderType)
+     {
+         self.email = email
+         self.provider = provider
+         super.init(nibName: nil, bundle: nil)
+     }
+     
+     required init?(coder: NSCoder)
+     {
+         fatalError("init(coder:) has not been implemented")
+     }
     override func viewDidLoad()
     {
+        print("okkkk ")
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
