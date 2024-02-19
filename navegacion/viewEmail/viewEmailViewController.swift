@@ -18,13 +18,24 @@ class viewEmailViewController: UIViewController
     @IBOutlet weak var ProvedorLable: UITextField!
     @IBOutlet weak var closeSecionLable: UIButton!
     
-    //private let email: String
-    //private let provider: ProviderType
+    var email: String
+    var provider: ProviderType
+    
+    init(email: String, provider: ProviderType)
+    {
+        self.email = email
+        self.provider = provider
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder)
+    {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        emailLable.text = email
         // Do any additional setup after loading the view.
     }
     

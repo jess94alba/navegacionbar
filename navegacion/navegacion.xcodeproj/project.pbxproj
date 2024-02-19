@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		480109432B7FAD89005F4093 /* viewConuntController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480109422B7FAD89005F4093 /* viewConuntController.swift */; };
+		485D61512B81A2C900F69140 /* tabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485D61502B81A2C900F69140 /* tabBar.xib */; };
 		4898E79C2B7FE55A002B696B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4898E79B2B7FE55A002B696B /* TabBarController.swift */; };
 		4898E79F2B7FEA4C002B696B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4898E79E2B7FEA4C002B696B /* GoogleService-Info.plist */; };
 		4898E7A42B7FEE16002B696B /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4898E7A32B7FEE16002B696B /* FirebaseAnalytics */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		480109422B7FAD89005F4093 /* viewConuntController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewConuntController.swift; sourceTree = "<group>"; };
+		485D61502B81A2C900F69140 /* tabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tabBar.xib; sourceTree = "<group>"; };
 		4898E79B2B7FE55A002B696B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		4898E79E2B7FEA4C002B696B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4898E7AF2B7FF2D7002B696B /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				4898E79B2B7FE55A002B696B /* TabBarController.swift */,
+				485D61502B81A2C900F69140 /* tabBar.xib */,
 			);
 			path = barcontroler;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485D61512B81A2C900F69140 /* tabBar.xib in Resources */,
 				48B232462B7F204800C0A749 /* LaunchScreen.storyboard in Resources */,
 				4898E79F2B7FEA4C002B696B /* GoogleService-Info.plist in Resources */,
 				48B232432B7F204800C0A749 /* Assets.xcassets in Resources */,

@@ -16,7 +16,6 @@ class TabBarController: UITabBarController
     {
         self.email = email
         self.provider = provider
-        //self.navigationController?.pushViewController(viewEmailViewController(nibName: email, bundle: provider), animated: Bool)
         super.init(nibName: nil, bundle: nil)
     }
     

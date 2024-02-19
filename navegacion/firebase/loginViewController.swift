@@ -28,14 +28,24 @@ class loginViewController: UIViewController
             Auth.auth().createUser(withEmail: email, password: password)
             {
                 (result, error) in
-                
-                if let result = result, error == nil
+                let storyboard = UIStoryboard(name: "viewEmailViewController", bundle: nil)
+                if let viewEmailVC = storyboard.instantiateViewController(withIdentifier: "viewEmailViewController") as? viewEmailViewController {
+                    viewEmailVC.email = email
+                    viewEmailVC.provider = .basic
+                    self.navigationController?.pushViewController(viewEmailVC, animated: true)
+                }                /*if let result = result, error == nil
                 {
                     print("okkkk \(result.user.email ?? "NOOO")")
-                    self.navigationController?.pushViewController(TabBarController(email: result.user.email!, provider: .basic), animated: true)
-                }else
+                    
+                    self.navigationController?.pushViewController(viewEmailViewController(email: email, provider: .basic), animated: true)
+                    //self.navigationController?.pushViewController(TabBarController(email: result.user.email!, provider: .basic), animated: true)
+                }*/
+                else
                 {
                     print("ERROR JESS \(error!)")
+                    let alertController = UIAlertController(title: "ERROR", message: "email o contraseña incorecta", preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
+                    self.present(alertController, animated: true, completion: nil)
                 }
             }
         }
@@ -51,10 +61,13 @@ class loginViewController: UIViewController
                 if let result = result, error == nil
                 {
                     print("okkkk \(result.user.email ?? "NOOO")")
-                    self.navigationController?.pushViewController(TabBarController(email: result.user.email!, provider: .basic), animated: true)
+                    self.navigationController?.pushViewController(viewEmailViewController(email: result.user.email!, provider: .basic), animated: true)
                 }else
                 {
                     print("ERROR JESS \(error!)")
+                    let alertController = UIAlertController(title: "ERROR", message: "email o contraseña incorecta", preferredStyle: .alert)
+                    alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
+                    self.present(alertController, animated: true, completion: nil)
                 }
             }
         }
